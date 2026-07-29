@@ -1,0 +1,165 @@
+@use "../vars" as *;
+
+.resize-animation-stopper * {
+  animation: none;
+  transition: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-blue);
+  width: 100%;
+  height: 74px;
+  z-index: 100;
+
+  &__container {
+    max-width: 1640px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 88px;
+    transition: padding 0.3s ease;
+  }
+
+  &__logo {
+    display: block;
+    height: 45px;
+
+    img {
+      height: 100%;
+      width: auto;
+      display: block;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    transition: gap 0.3s ease;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+    transition: gap 0.3s ease;
+  }
+
+  &__link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    padding: 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+    border-radius: 3px;
+    padding: 0 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, font-size 0.3s ease;
+
+    &:hover {
+      background: var(--color-primary);
+    }
+  }
+
+  &__burger {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    &__container {
+      padding: 0 20px;
+    }
+    &__right {
+      gap: 30px;
+    }
+    &__nav {
+      gap: 30px;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .header {
+    &__right {
+      gap: 15px;
+    }
+    &__nav {
+      gap: 15px;
+    }
+
+    &__link,
+    &__btn {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &__burger {
+      display: block;
+    }
+
+    &__btn--desktop {
+      display: none;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 74px;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      background: var(--color-blue);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 30px 20px;
+      gap: 25px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+
+      &.is-active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+
+    &__link {
+      font-size: 16px;
+    }
+  }
+}

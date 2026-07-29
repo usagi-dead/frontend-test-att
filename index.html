@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Экскурсия: Тысячелетний Брест</title>
+  <link rel="stylesheet" href="src/scss/style.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header class="header">
+  <div class="header__container">
+
+    <a href="#" class="header__logo" aria-label="На главную">
+      <img src="/src/assets/logo-small.png" alt="Логотип Экскурсии">
+    </a>
+
+    <div class="header__right">
+      <nav class="header__nav">
+        <a href="#" class="header__link">программа</a>
+        <a href="#schedule" class="header__link">расписание</a>
+        <a href="#reviews" class="header__link">отзывы</a>
+
+        <div class="dropdown">
+          <button class="dropdown__btn dropdown__btn--white" type="button">
+            контакты
+            <svg class="dropdown__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.0303 6.96967C14.3232 7.26256 14.3232 7.73744 14.0303 8.03033L9.53033 12.5303C9.38968 12.671 9.19891 12.75 9 12.75C8.80109 12.75 8.61032 12.671 8.46967 12.5303L3.96967 8.03033C3.67678 7.73744 3.67678 7.26257 3.96967 6.96967C4.26256 6.67678 4.73744 6.67678 5.03033 6.96967L9 10.9393L12.9697 6.96967C13.2626 6.67678 13.7374 6.67678 14.0303 6.96967Z" fill="currentColor"/>
+            </svg>
+          </button>
+
+          <div class="dropdown__content dropdown__content--contacts">
+            <a href="tel:+375297566665" class="dropdown__phone">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_29_1023)">
+                  <path d="M14.2018 11.4444L16.9045 14.148C17.0789 14.3226 17.1769 14.5592 17.1769 14.8059C17.1769 15.0527 17.0789 15.2893 16.9045 15.4638C15.9539 16.4144 14.6924 16.9902 13.3514 17.0856C12.0105 17.181 10.6802 16.7896 9.60458 15.9831L7.99628 14.7771C6.21619 13.4419 4.63497 11.8604 3.30008 10.08L2.09408 8.47175C1.28767 7.39617 0.896235 6.06582 0.991626 4.7249C1.08702 3.38398 1.66283 2.12244 2.61338 1.17185C2.78789 0.997407 3.02454 0.899414 3.27128 0.899414C3.51803 0.899414 3.75467 0.997407 3.92918 1.17185L6.63278 3.87635C6.72759 3.97112 6.8028 4.08365 6.85411 4.2075C6.90543 4.33135 6.93184 4.46409 6.93184 4.59815C6.93184 4.7322 6.90543 4.86495 6.85411 4.9888C6.8028 5.11264 6.72759 5.22517 6.63278 5.31995L5.59058 6.36215C5.50975 6.44286 5.45634 6.54695 5.43793 6.65969C5.41952 6.77243 5.43703 6.88811 5.48798 6.99035C6.69954 9.4129 8.66413 11.3772 11.0869 12.5883C11.2966 12.6936 11.5495 12.6522 11.7151 12.4866L12.7573 11.4444C12.8521 11.3496 12.9646 11.2744 13.0884 11.2231C13.2123 11.1718 13.345 11.1454 13.4791 11.1454C13.6131 11.1454 13.7459 11.1718 13.8697 11.2231C13.9936 11.2744 14.107 11.3496 14.2018 11.4444Z" fill="currentColor" stroke="currentColor"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_29_1023">
+                    <rect width="18" height="18" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              +375 29 756-66-65
+            </a>
+
+            <div class="dropdown__socials">
+              <a href="#" class="dropdown__social-link" aria-label="WhatsApp">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="var(--color-blue)"/>
+                  <path d="M12.9116 4.58337C14.8999 4.58423 16.7661 5.35825 18.1694 6.76306C19.5728 8.16796 20.345 10.0358 20.3442 12.0219C20.3425 16.119 17.0097 19.4528 12.9116 19.4545H12.9087C11.6648 19.454 10.4425 19.1422 9.35693 18.5502L5.4165 19.5834L6.47119 15.7318C5.82077 14.6046 5.47848 13.3259 5.479 12.016C5.48063 7.91784 8.81476 4.58346 12.9116 4.58337ZM12.9146 5.83923C9.50691 5.83923 6.73536 8.60987 6.73389 12.016C6.73341 13.1833 7.05981 14.3205 7.67822 15.3041L7.82568 15.5375L7.20068 17.8177L9.53955 17.2045L9.76514 17.3383C10.7136 17.901 11.8012 18.1992 12.9097 18.1996H12.9116C16.3167 18.1996 19.088 15.4274 19.0894 12.0209C19.0899 10.3702 18.4481 8.81843 17.2817 7.65076C16.1154 6.48307 14.5646 5.83987 12.9146 5.83923ZM10.6362 8.59021C10.7502 8.59593 10.9034 8.54646 11.0542 8.90857C11.2088 9.28013 11.5795 10.1932 11.6265 10.2875C11.6729 10.3804 11.7038 10.4888 11.6421 10.6127C11.5802 10.7365 11.5494 10.8148 11.4565 10.9232C11.3638 11.0316 11.2617 11.1652 11.1782 11.2484C11.0853 11.341 10.9879 11.4414 11.0962 11.6273C11.2045 11.8132 11.5775 12.421 12.1294 12.9135C12.8388 13.5462 13.4378 13.7424 13.6235 13.8353C13.8091 13.9283 13.9176 13.9133 14.0259 13.7894C14.1342 13.6655 14.49 13.2468 14.6138 13.0609C14.7375 12.8751 14.8616 12.9062 15.0317 12.9681C15.2027 13.0306 16.1145 13.4797 16.3003 13.5726C16.486 13.6656 16.6103 13.712 16.6567 13.7894C16.703 13.8675 16.7028 14.239 16.5483 14.6722C16.3935 15.1061 15.6513 15.5018 15.2944 15.5551C14.9745 15.6029 14.5694 15.6232 14.1245 15.4818C13.8548 15.3962 13.5089 15.2815 13.0659 15.0902C11.203 14.2857 9.986 12.4106 9.89307 12.2865C9.8002 12.1626 9.13525 11.2788 9.13525 10.3646C9.13539 9.4512 9.61426 9.00186 9.78467 8.8158C9.9549 8.62986 10.157 8.58337 10.2808 8.58337C10.4044 8.58338 10.5282 8.58478 10.6362 8.59021Z" fill="var(--color-white)"/>
+                </svg>
+              </a>
+              <a href="#" class="dropdown__social-link" aria-label="Telegram">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="25" height="25" rx="12.5" fill="var(--color-blue)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.79448 12.3681C9.48404 10.7804 11.9443 9.73378 13.1753 9.22808C16.6901 7.78421 17.4204 7.53339 17.8965 7.52511C18.0012 7.52329 18.2353 7.54892 18.3869 7.67044C18.5149 7.77305 18.5502 7.91167 18.567 8.00896C18.5839 8.10625 18.6049 8.32787 18.5882 8.50104C18.3977 10.4776 17.5736 15.2741 17.1543 17.4879C16.9769 18.4246 16.6275 18.7387 16.2894 18.7694C15.5544 18.8362 14.9963 18.2897 14.2844 17.8289C13.1705 17.1077 12.5412 16.6588 11.46 15.955C10.2104 15.1417 11.0204 14.6948 11.7326 13.9642C11.9189 13.7731 15.1572 10.8639 15.2199 10.6C15.2278 10.567 15.235 10.444 15.161 10.379C15.087 10.3141 14.9778 10.3363 14.899 10.354C14.7873 10.379 13.0078 11.5407 9.56051 13.8389C9.0554 14.1815 8.5979 14.3484 8.18799 14.3397C7.73609 14.33 6.86683 14.0873 6.22063 13.8798C5.42803 13.6254 4.79809 13.4908 4.85294 13.0587C4.88151 12.8336 5.19536 12.6034 5.79448 12.3681Z" fill="var(--color-white)"/>
+                </svg>
+              </a>
+              <a href="#" class="dropdown__social-link" aria-label="Viber">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 0C19.4036 0 25 5.59644 25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0Z" fill="var(--color-blue)"/>
+                  <path d="M17.7421 6.63108C17.3873 6.29671 15.9534 5.23365 12.7595 5.21921C12.7595 5.21921 8.99301 4.98725 7.15693 6.70724C6.13486 7.75126 5.77531 9.2789 5.73739 11.1729C5.69946 13.0668 5.65039 16.6162 9.00051 17.5786H9.00372L9.00158 19.0471C9.00158 19.0471 8.98015 19.6417 9.36348 19.7629C9.82716 19.91 10.0993 19.4581 10.542 18.971C10.785 18.7036 11.1205 18.3108 11.3733 18.0106C13.6645 18.2075 15.4267 17.7574 15.6268 17.6909C16.0894 17.5377 18.7072 17.195 19.1329 13.646C19.5724 9.9879 18.9204 7.67402 17.7421 6.63108ZM18.1304 13.3837C17.771 16.347 15.6478 16.5333 15.2563 16.6615C15.0899 16.7162 13.5422 17.1094 11.596 16.9797C11.596 16.9797 10.1458 18.7664 9.69282 19.231C9.62211 19.3036 9.53897 19.3329 9.48347 19.3185C9.40548 19.299 9.38405 19.2047 9.38491 19.0668C9.3862 18.8699 9.39734 16.6265 9.39734 16.6265C9.39562 16.6265 9.39734 16.6265 9.39734 16.6265C6.5634 15.8229 6.7286 12.802 6.76074 11.2201C6.79288 9.63821 7.08386 8.34232 7.94823 7.47073C9.50126 6.03412 12.7005 6.24879 12.7005 6.24879C15.4023 6.26083 16.6969 7.09172 16.9971 7.37006C17.9939 8.24166 18.5017 10.3273 18.1304 13.3828V13.3837Z" fill="var(--color-white)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8145 9.94025C12.8197 9.8385 12.9046 9.76033 13.0043 9.76564C13.377 9.78549 13.6871 9.90072 13.9079 10.1339C14.128 10.3663 14.2358 10.6908 14.2547 11.0806C14.2597 11.1824 14.1829 11.2689 14.0833 11.274C13.9837 11.279 13.8989 11.2006 13.8939 11.0989C13.8777 10.7652 13.7881 10.5381 13.6483 10.3904C13.5093 10.2437 13.2972 10.1507 12.9854 10.1341C12.8858 10.1288 12.8093 10.042 12.8145 9.94025Z" fill="var(--color-white)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5408 8.94641C12.5481 8.8448 12.6346 8.76845 12.7341 8.77589C13.4926 8.83259 14.1032 9.09728 14.5479 9.59306L14.548 9.59313C14.9879 10.084 15.197 10.6947 15.1818 11.411C15.1796 11.5129 15.097 11.5937 14.9973 11.5914C14.8975 11.5892 14.8184 11.5049 14.8206 11.403C14.834 10.7713 14.6521 10.2558 14.2815 9.84221C13.912 9.43034 13.3955 9.19525 12.7077 9.14385C12.6082 9.13641 12.5335 9.04802 12.5408 8.94641Z" fill="var(--color-white)"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2217 8.00167C12.2224 7.89979 12.3038 7.81778 12.4036 7.81849C13.4518 7.82594 14.3379 8.18234 15.0493 8.8906C15.7666 9.60478 16.1214 10.5771 16.1304 11.7846C16.1312 11.8865 16.0509 11.9697 15.9511 11.9705C15.8514 11.9713 15.7699 11.8893 15.7691 11.7874C15.7607 10.6559 15.4311 9.78595 14.7971 9.15478C14.1572 8.51769 13.3627 8.19426 12.4011 8.18742C12.3013 8.18671 12.221 8.10355 12.2217 8.00167Z" fill="var(--color-white)"/>
+                  <path d="M13.0307 13.5606C13.0307 13.5606 13.2846 13.5824 13.4213 13.4104L13.6878 13.068C13.8164 12.8982 14.1267 12.7899 14.4305 12.9627C14.6582 13.0953 14.8792 13.2395 15.0928 13.3947C15.2944 13.5461 15.7073 13.898 15.7086 13.898C15.9053 14.0676 15.9507 14.3166 15.8168 14.5792C15.8168 14.5807 15.8158 14.5834 15.8158 14.5847C15.6683 14.8458 15.481 15.0813 15.261 15.2823C15.2584 15.2836 15.2584 15.2849 15.2561 15.2862C15.065 15.4493 14.8772 15.542 14.6928 15.5644C14.6656 15.5692 14.638 15.571 14.6105 15.5696C14.5292 15.5704 14.4483 15.5577 14.3709 15.532L14.3649 15.523C14.0808 15.4412 13.6064 15.2363 12.8164 14.7913C12.3592 14.5367 11.924 14.2431 11.5154 13.9135C11.3105 13.7484 11.1152 13.5715 10.9302 13.3835L10.9105 13.3634L10.8908 13.3433L10.871 13.3231C10.8644 13.3166 10.858 13.3098 10.8513 13.303C10.6673 13.1141 10.494 12.9146 10.3324 12.7054C10.0097 12.2881 9.72221 11.8437 9.47293 11.3769C9.0371 10.5698 8.83655 10.0858 8.75641 9.7952L8.74762 9.78907C8.72251 9.71009 8.71013 9.62746 8.71098 9.54442C8.70948 9.51631 8.71114 9.48812 8.71591 9.46039C8.73891 9.27234 8.82983 9.08043 8.98868 8.88466C8.98996 8.88225 8.99125 8.88225 8.99254 8.87962C9.1893 8.65495 9.41989 8.46378 9.67563 8.3133C9.67692 8.3133 9.67949 8.31198 9.68099 8.31198C9.93811 8.17522 10.182 8.22161 10.3478 8.4214C10.3491 8.42271 10.693 8.84439 10.8406 9.05031C10.9926 9.26864 11.1338 9.49461 11.2636 9.72736C11.4329 10.0374 11.3268 10.355 11.1605 10.4858L10.8252 10.758C10.6559 10.8977 10.6782 11.157 10.6782 11.157C10.6782 11.157 11.1749 13.0767 13.0307 13.5606Z" fill="var(--color-white)"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="dropdown">
+        <button class="dropdown__btn dropdown__btn--orange" type="button">
+          BYN
+          <svg class="dropdown__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0303 6.96967C14.3232 7.26256 14.3232 7.73744 14.0303 8.03033L9.53033 12.5303C9.38968 12.671 9.19891 12.75 9 12.75C8.80109 12.75 8.61032 12.671 8.46967 12.5303L3.96967 8.03033C3.67678 7.73744 3.67678 7.26257 3.96967 6.96967C4.26256 6.67678 4.73744 6.67678 5.03033 6.96967L9 10.9393L12.9697 6.96967C13.2626 6.67678 13.7374 6.67678 14.0303 6.96967Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <div class="dropdown__content">
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--active">BYN</li>
+            <li class="dropdown__item">RUB</li>
+            <li class="dropdown__item">EUR</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropdown__btn dropdown__btn--orange" type="button">
+          РУС
+          <svg class="dropdown__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.0303 6.96967C14.3232 7.26256 14.3232 7.73744 14.0303 8.03033L9.53033 12.5303C9.38968 12.671 9.19891 12.75 9 12.75C8.80109 12.75 8.61032 12.671 8.46967 12.5303L3.96967 8.03033C3.67678 7.73744 3.67678 7.26257 3.96967 6.96967C4.26256 6.67678 4.73744 6.67678 5.03033 6.96967L9 10.9393L12.9697 6.96967C13.2626 6.67678 13.7374 6.67678 14.0303 6.96967Z" fill="currentColor"/>
+          </svg>
+        </button>
+        <div class="dropdown__content">
+          <ul class="dropdown__list">
+            <li class="dropdown__item dropdown__item--active">РУС</li>
+            <li class="dropdown__item">ENG</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="header__btn header__btn--desktop" type="button">бронировать</button>
+
+      <button class="header__burger" type="button" aria-label="Открыть меню">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0.5" y="0.5" width="34" height="34" rx="2.5" stroke="white"/>
+          <line x1="6" y1="9.5" x2="29" y2="9.5" stroke="white"/>
+          <line x1="6" y1="17.5" x2="29" y2="17.5" stroke="white"/>
+          <line x1="6" y1="25.5" x2="29" y2="25.5" stroke="white"/>
+        </svg>
+
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__overlay"></div>
+
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Экскурсия<br>
+          Тысячелетний <br class="hero__br hero__br--mobile">
+          Брест и<br class="hero__br hero__br--desktop">
+          Брестская <br class="hero__br hero__br--mobile">
+          крепость
+        </h1>
+        <p class="hero__subtitle">
+          Погрузитесь в историю наследия заповедной памяти
+        </p>
+
+        <div class="hero__button-container">
+          <a href="#schedule" class="hero__btn">Расписание</a>
+
+          <a href="#schedule" class="hero__scroll" aria-label="Скролл к расписанию">
+            <svg class="hero__scroll-icon" width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_29_1084)">
+                <path d="M24 16H0V40H24V16Z" fill="white" fill-opacity="0.01"/>
+                <path class="arrow-bottom" d="M23 24L12 35L1 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g clip-path="url(#clip1_29_1084)">
+                <path d="M24 8H0V32H24V8Z" fill="white" fill-opacity="0.01"/>
+                <path class="arrow-middle" d="M23 16L12 27L1 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g clip-path="url(#clip2_29_1084)">
+                <path d="M24 0H0V24H24V0Z" fill="white" fill-opacity="0.01"/>
+                <path class="arrow-top" d="M23 8L12 19L1 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_29_1084">
+                  <rect width="24" height="24" fill="white" transform="translate(0 16)"/>
+                </clipPath>
+                <clipPath id="clip1_29_1084">
+                  <rect width="24" height="24" fill="white" transform="translate(0 8)"/>
+                </clipPath>
+                <clipPath id="clip2_29_1084">
+                  <rect width="24" height="24" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="schedule">
+    <div class="schedule__container">
+
+      <div class="schedule__header">
+        <h2 class="schedule__title">Расписание экскурсии<br>Тысячелетний Брест и Брестская крепость</h2>
+      </div>
+
+      <form class="schedule-form" id="search-form">
+        <div class="schedule-form__group">
+          <label for="date-from" class="schedule-form__label">Дата с</label>
+          <div class="schedule-form__input-wrapper">
+            <input type="text" id="date-from" class="schedule-form__input" placeholder="Дд.Мм.Гггг" readonly>
+            <svg class="schedule-form__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.2083 5.75H4.79167C3.73312 5.75 2.875 6.60812 2.875 7.66667V18.2083C2.875 19.2669 3.73312 20.125 4.79167 20.125H18.2083C19.2669 20.125 20.125 19.2669 20.125 18.2083V7.66667C20.125 6.60812 19.2669 5.75 18.2083 5.75Z" stroke="#727272"/>
+              <path d="M2.875 9.58333C2.875 7.77592 2.875 6.87317 3.43658 6.31158C3.99817 5.75 4.90092 5.75 6.70833 5.75H16.2917C18.0991 5.75 19.0018 5.75 19.5634 6.31158C20.125 6.87317 20.125 7.77592 20.125 9.58333H2.875Z" fill="#727272"/>
+              <path d="M6.7085 2.875V5.75M16.2918 2.875V5.75" stroke="#727272" stroke-linecap="round"/>
+              <path d="M10.0627 11.5H7.18766C6.92303 11.5 6.7085 11.7145 6.7085 11.9792V12.9375C6.7085 13.2021 6.92303 13.4167 7.18766 13.4167H10.0627C10.3273 13.4167 10.5418 13.2021 10.5418 12.9375V11.9792C10.5418 11.7145 10.3273 11.5 10.0627 11.5Z" fill="#727272"/>
+              <path d="M10.0627 15.3334H7.18766C6.92303 15.3334 6.7085 15.5479 6.7085 15.8125V16.7709C6.7085 17.0355 6.92303 17.25 7.18766 17.25H10.0627C10.3273 17.25 10.5418 17.0355 10.5418 16.7709V15.8125C10.5418 15.5479 10.3273 15.3334 10.0627 15.3334Z" fill="#727272"/>
+              <path d="M15.8127 11.5H12.9377C12.673 11.5 12.4585 11.7145 12.4585 11.9792V12.9375C12.4585 13.2021 12.673 13.4167 12.9377 13.4167H15.8127C16.0773 13.4167 16.2918 13.2021 16.2918 12.9375V11.9792C16.2918 11.7145 16.0773 11.5 15.8127 11.5Z" fill="#727272"/>
+              <path d="M15.8127 15.3334H12.9377C12.673 15.3334 12.4585 15.5479 12.4585 15.8125V16.7709C12.4585 17.0355 12.673 17.25 12.9377 17.25H15.8127C16.0773 17.25 16.2918 17.0355 16.2918 16.7709V15.8125C16.2918 15.5479 16.0773 15.3334 15.8127 15.3334Z" fill="#727272"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="schedule-form__group">
+          <label for="date-to" class="schedule-form__label">Дата по</label>
+          <div class="schedule-form__input-wrapper">
+            <input type="text" id="date-to" class="schedule-form__input" placeholder="Дд.Мм.Гггг" readonly>
+            <svg class="schedule-form__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.2083 5.75H4.79167C3.73312 5.75 2.875 6.60812 2.875 7.66667V18.2083C2.875 19.2669 3.73312 20.125 4.79167 20.125H18.2083C19.2669 20.125 20.125 19.2669 20.125 18.2083V7.66667C20.125 6.60812 19.2669 5.75 18.2083 5.75Z" stroke="#727272"/>
+              <path d="M2.875 9.58333C2.875 7.77592 2.875 6.87317 3.43658 6.31158C3.99817 5.75 4.90092 5.75 6.70833 5.75H16.2917C18.0991 5.75 19.0018 5.75 19.5634 6.31158C20.125 6.87317 20.125 7.77592 20.125 9.58333H2.875Z" fill="#727272"/>
+              <path d="M6.7085 2.875V5.75M16.2918 2.875V5.75" stroke="#727272" stroke-linecap="round"/>
+              <path d="M10.0627 11.5H7.18766C6.92303 11.5 6.7085 11.7145 6.7085 11.9792V12.9375C6.7085 13.2021 6.92303 13.4167 7.18766 13.4167H10.0627C10.3273 13.4167 10.5418 13.2021 10.5418 12.9375V11.9792C10.5418 11.7145 10.3273 11.5 10.0627 11.5Z" fill="#727272"/>
+              <path d="M10.0627 15.3334H7.18766C6.92303 15.3334 6.7085 15.5479 6.7085 15.8125V16.7709C6.7085 17.0355 6.92303 17.25 7.18766 17.25H10.0627C10.3273 17.25 10.5418 17.0355 10.5418 16.7709V15.8125C10.5418 15.5479 10.3273 15.3334 10.0627 15.3334Z" fill="#727272"/>
+              <path d="M15.8127 11.5H12.9377C12.673 11.5 12.4585 11.7145 12.4585 11.9792V12.9375C12.4585 13.2021 12.673 13.4167 12.9377 13.4167H15.8127C16.0773 13.4167 16.2918 13.2021 16.2918 12.9375V11.9792C16.2918 11.7145 16.0773 11.5 15.8127 11.5Z" fill="#727272"/>
+              <path d="M15.8127 15.3334H12.9377C12.673 15.3334 12.4585 15.5479 12.4585 15.8125V16.7709C12.4585 17.0355 12.673 17.25 12.9377 17.25H15.8127C16.0773 17.25 16.2918 17.0355 16.2918 16.7709V15.8125C16.2918 15.5479 16.0773 15.3334 15.8127 15.3334Z" fill="#727272"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="schedule-form__group">
+          <label for="adults" class="schedule-form__label">Кол-во взрослых</label>
+          <div class="schedule-form__input-wrapper">
+            <select id="adults" class="schedule-form__select">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <svg class="schedule-form__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="schedule-form__group">
+          <label for="children" class="schedule-form__label">Кол-во детей</label>
+          <div class="schedule-form__input-wrapper">
+            <select id="children" class="schedule-form__select">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <svg class="schedule-form__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="schedule-form__group schedule-form__group--btn">
+          <button type="submit" class="schedule-form__submit">Поиск</button>
+        </div>
+      </form>
+
+      <div class="schedule__grid">
+        <article class="schedule-card schedule-card--empty">
+          <div class="schedule-card__info">
+            <h3 class="schedule-card__date">18.06.2026 (чт.)</h3>
+            <p class="schedule-card__time">Начало: 18:00 ~ 4 ч. 15 мин.</p>
+            <p class="schedule-card__status">Нет мест</p>
+          </div>
+          <div class="schedule-card__action">
+            <p class="schedule-card__price">60.00 BYN / 55.00 BYN</p>
+          </div>
+        </article>
+
+        <article class="schedule-card">
+          <div class="schedule-card__info">
+            <h3 class="schedule-card__date">25.06.2026 (чт.)</h3>
+            <p class="schedule-card__time">Начало: 18:00 ~ 4 ч. 15 мин.</p>
+            <p class="schedule-card__status">Осталось мест: 2</p>
+          </div>
+          <div class="schedule-card__action">
+            <p class="schedule-card__price">60.00 BYN / 55.00 BYN</p>
+            <button class="schedule-card__btn">Бронировать</button>
+          </div>
+        </article>
+
+        <article class="schedule-card">
+          <div class="schedule-card__info">
+            <h3 class="schedule-card__date">25.06.2026 (чт.)</h3>
+            <p class="schedule-card__time">Начало: 18:00 ~ 4 ч. 15 мин.</p>
+            <p class="schedule-card__status">Осталось мест: 2</p>
+          </div>
+          <div class="schedule-card__action">
+            <p class="schedule-card__price">60.00 BYN / 55.00 BYN</p>
+            <button class="schedule-card__btn">Бронировать</button>
+          </div>
+        </article>
+
+        <article class="schedule-card">
+          <div class="schedule-card__info">
+            <h3 class="schedule-card__date">25.06.2026 (чт.)</h3>
+            <p class="schedule-card__time">Начало: 18:00 ~ 4 ч. 15 мин.</p>
+            <p class="schedule-card__status">Осталось мест: 2</p>
+          </div>
+          <div class="schedule-card__action">
+            <p class="schedule-card__price">60.00 BYN / 55.00 BYN</p>
+            <button class="schedule-card__btn">Бронировать</button>
+          </div>
+        </article>
+
+        <article class="schedule-card">
+          <div class="schedule-card__info">
+            <h3 class="schedule-card__date">25.06.2026 (чт.)</h3>
+            <p class="schedule-card__time">Начало: 18:00 ~ 4 ч. 15 мин.</p>
+            <p class="schedule-card__status">Осталось мест: 2</p>
+          </div>
+          <div class="schedule-card__action">
+            <p class="schedule-card__price">60.00 BYN / 55.00 BYN</p>
+            <button class="schedule-card__btn">Бронировать</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="reviews__container">
+      <h2 class="reviews__title">Отзывы наших клиентов</h2>
+
+      <div class="reviews__slider">
+        <div class="reviews__slider-window">
+          <div class="reviews__track" id="reviews-track">
+
+            <article class="review-card">
+              <div class="review-card__header">
+                <img src="/src/assets/avatar-1.png" alt="Марина" class="review-card__avatar">
+                <div class="review-card__meta">
+                  <h3 class="review-card__name">Марина, <span class="review-card__city">Санкт-Петербург</span></h3>
+                  <span class="review-card__date">11-Июня-2026</span>
+                  <div class="review-card__stars">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip1_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip2_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip3_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip4_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#D9D9D9" stroke="#D9D9D9" stroke-width="2" stroke-linejoin="round"/></g></svg>
+                  </div>
+                  <p class="review-card__text">
+                    Поездка очень понравилась! Усадьба Огинского, которого знают все, но о нем знают меньше. Быт белорусской усадьбы атмосфере. Три очень интересных костела, православный храм. Гид Юрий рассказывал интересно, видна любовь к родному краю, что всегда вдохновляет. Три очень интересных костела, православный храм.
+                    <span class="review-card__short">Ги...</span>
+                    <span class="review-card__full">Гид Юрий рассказывал интересно, видна любовь к родному краю, что всегда вдохновляет. Три очень интересных костела, православный храм. Гид Юрий рассказывал интересно, видна любовь к родному краю, что всегда вдохновляет.</span>
+                    <button class="review-card__toggle" type="button">далее...</button>
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__header">
+                <img src="/src/assets/avatar-1.png" alt="Марина" class="review-card__avatar">
+                <div class="review-card__meta">
+                  <h3 class="review-card__name">Марина, <span class="review-card__city">Санкт-Петербург</span></h3>
+                  <span class="review-card__date">11-Июня-2026</span>
+                  <div class="review-card__stars">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip5_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip5_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip6_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip6_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip7_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip7_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip8_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip8_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip9_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#D9D9D9" stroke="#D9D9D9" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip9_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                  </div>
+                  <p class="review-card__text">
+                    Поездка очень понравилась! Усадьба Огинского, которого знают все, но о нем знают меньше. Быт белорусской усадьбы атмосфере.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__header">
+                <img src="/src/assets/avatar-1.png" alt="Елена" class="review-card__avatar">
+                <div class="review-card__meta">
+                  <h3 class="review-card__name">Елена, <span class="review-card__city">Москва</span></h3>
+                  <span class="review-card__date">11-Июня-2026</span>
+                  <div class="review-card__stars">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip10_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip10_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip11_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip11_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip12_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip12_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip13_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip13_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip14_29_1016)"><path d="M14 0H0V14H14V0Z" fill="white" fill-opacity="0.01"/><path d="M6.99943 1.45837L5.21647 5.09767L1.1665 5.68494L4.10035 8.55319L3.39904 12.5417L6.99943 10.6223L10.6006 12.5417L9.90443 8.55319L12.8332 5.68494L8.80563 5.09767L6.99943 1.45837Z" fill="#F2B124" stroke="#F2B124" stroke-width="2" stroke-linejoin="round"/></g><defs><clipPath id="clip14_29_1016"><rect width="14" height="14" fill="white"/></clipPath></defs></svg>
+                  </div>
+                  <p class="review-card__text">
+                    Отличная экскурсия! Брестская крепость впечатляет своим масштабом и историей. Организация на высшем уровне, автобус комфортный, гид ответил на все наши вопросы. Обязательно порекомендую друзьям!
+                  </p>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="reviews__controls">
+          <button class="reviews__btn reviews__btn--prev" id="reviews-prev" aria-label="Предыдущий отзыв">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="reviews__btn reviews__btn--next" id="reviews-next" aria-label="Следующий отзыв">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <a href="#" class="footer__logo" aria-label="На главную">
+      <img src="/src/assets/logo-full.png" alt="Логотип Экскурсии">
+    </a>
+
+    <div class="footer__content">
+      <div class="footer__contacts">
+        <h4 class="footer__heading">контакты</h4>
+        <a href="tel:+375173944913" class="footer__link">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2018 11.4444L16.9045 14.148C17.0789 14.3226 17.1769 14.5592 17.1769 14.8059C17.1769 15.0527 17.0789 15.2893 16.9045 15.4638C15.9539 16.4144 14.6924 16.9902 13.3514 17.0856C12.0105 17.181 10.6802 16.7896 9.60458 15.9831L7.99628 14.7771C6.21619 13.4419 4.63497 11.8604 3.30008 10.08L2.09408 8.47175C1.28767 7.39617 0.896235 6.06582 0.991626 4.7249C1.08702 3.38398 1.66283 2.12244 2.61338 1.17185C2.78789 0.997407 3.02454 0.899414 3.27128 0.899414C3.51803 0.899414 3.75467 0.997407 3.92918 1.17185L6.63278 3.87635C6.72759 3.97112 6.8028 4.08365 6.85411 4.2075C6.90543 4.33135 6.93184 4.46409 6.93184 4.59815C6.93184 4.7322 6.90543 4.86495 6.85411 4.9888C6.8028 5.11264 6.72759 5.22517 6.63278 5.31995L5.59058 6.36215C5.50975 6.44286 5.45634 6.54695 5.43793 6.65969C5.41952 6.77243 5.43703 6.88811 5.48798 6.99035C6.69954 9.4129 8.66413 11.3772 11.0869 12.5883C11.2966 12.6936 11.5495 12.6522 11.7151 12.4866L12.7573 11.4444C12.8521 11.3496 12.9646 11.2744 13.0884 11.2231C13.2123 11.1718 13.345 11.1454 13.4791 11.1454C13.6131 11.1454 13.7459 11.1718 13.8697 11.2231C13.9936 11.2744 14.107 11.3496 14.2018 11.4444Z" fill="currentColor" stroke="currentColor"/></svg>
+          +375 17 394-49-13
+        </a>
+        <a href="tel:+375297566665" class="footer__link">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2018 11.4444L16.9045 14.148C17.0789 14.3226 17.1769 14.5592 17.1769 14.8059C17.1769 15.0527 17.0789 15.2893 16.9045 15.4638C15.9539 16.4144 14.6924 16.9902 13.3514 17.0856C12.0105 17.181 10.6802 16.7896 9.60458 15.9831L7.99628 14.7771C6.21619 13.4419 4.63497 11.8604 3.30008 10.08L2.09408 8.47175C1.28767 7.39617 0.896235 6.06582 0.991626 4.7249C1.08702 3.38398 1.66283 2.12244 2.61338 1.17185C2.78789 0.997407 3.02454 0.899414 3.27128 0.899414C3.51803 0.899414 3.75467 0.997407 3.92918 1.17185L6.63278 3.87635C6.72759 3.97112 6.8028 4.08365 6.85411 4.2075C6.90543 4.33135 6.93184 4.46409 6.93184 4.59815C6.93184 4.7322 6.90543 4.86495 6.85411 4.9888C6.8028 5.11264 6.72759 5.22517 6.63278 5.31995L5.59058 6.36215C5.50975 6.44286 5.45634 6.54695 5.43793 6.65969C5.41952 6.77243 5.43703 6.88811 5.48798 6.99035C6.69954 9.4129 8.66413 11.3772 11.0869 12.5883C11.2966 12.6936 11.5495 12.6522 11.7151 12.4866L12.7573 11.4444C12.8521 11.3496 12.9646 11.2744 13.0884 11.2231C13.2123 11.1718 13.345 11.1454 13.4791 11.1454C13.6131 11.1454 13.7459 11.1718 13.8697 11.2231C13.9936 11.2744 14.107 11.3496 14.2018 11.4444Z" fill="currentColor" stroke="currentColor"/></svg>
+          +375 29 756-66-65
+        </a>
+        <div class="footer__socials">
+          <a href="#" class="footer__social-link" aria-label="WhatsApp">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25Z" fill="var(--color-white)"/><path d="M12.9116 4.58337C14.8999 4.58423 16.7661 5.35825 18.1694 6.76306C19.5728 8.16796 20.345 10.0358 20.3442 12.0219C20.3425 16.119 17.0097 19.4528 12.9116 19.4545H12.9087C11.6648 19.454 10.4425 19.1422 9.35693 18.5502L5.4165 19.5834L6.47119 15.7318C5.82077 14.6046 5.47848 13.3259 5.479 12.016C5.48063 7.91784 8.81476 4.58346 12.9116 4.58337ZM12.9146 5.83923C9.50691 5.83923 6.73536 8.60987 6.73389 12.016C6.73341 13.1833 7.05981 14.3205 7.67822 15.3041L7.82568 15.5375L7.20068 17.8177L9.53955 17.2045L9.76514 17.3383C10.7136 17.901 11.8012 18.1992 12.9097 18.1996H12.9116C16.3167 18.1996 19.088 15.4274 19.0894 12.0209C19.0899 10.3702 18.4481 8.81843 17.2817 7.65076C16.1154 6.48307 14.5646 5.83987 12.9146 5.83923ZM10.6362 8.59021C10.7502 8.59593 10.9034 8.54646 11.0542 8.90857C11.2088 9.28013 11.5795 10.1932 11.6265 10.2875C11.6729 10.3804 11.7038 10.4888 11.6421 10.6127C11.5802 10.7365 11.5494 10.8148 11.4565 10.9232C11.3638 11.0316 11.2617 11.1652 11.1782 11.2484C11.0853 11.341 10.9879 11.4414 11.0962 11.6273C11.2045 11.8132 11.5775 12.421 12.1294 12.9135C12.8388 13.5462 13.4378 13.7424 13.6235 13.8353C13.8091 13.9283 13.9176 13.9133 14.0259 13.7894C14.1342 13.6655 14.49 13.2468 14.6138 13.0609C14.7375 12.8751 14.8616 12.9062 15.0317 12.9681C15.2027 13.0306 16.1145 13.4797 16.3003 13.5726C16.486 13.6656 16.6103 13.712 16.6567 13.7894C16.703 13.8675 16.7028 14.239 16.5483 14.6722C16.3935 15.1061 15.6513 15.5018 15.2944 15.5551C14.9745 15.6029 14.5694 15.6232 14.1245 15.4818C13.8548 15.3962 13.5089 15.2815 13.0659 15.0902C11.203 14.2857 9.986 12.4106 9.89307 12.2865C9.8002 12.1626 9.13525 11.2788 9.13525 10.3646C9.13539 9.4512 9.61426 9.00186 9.78467 8.8158C9.9549 8.62986 10.157 8.58337 10.2808 8.58337C10.4044 8.58338 10.5282 8.58478 10.6362 8.59021Z" fill="var(--color-blue)"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Telegram">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="25" height="25" rx="12.5" fill="var(--color-white)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M5.79448 12.3681C9.48404 10.7804 11.9443 9.73378 13.1753 9.22808C16.6901 7.78421 17.4204 7.53339 17.8965 7.52511C18.0012 7.52329 18.2353 7.54892 18.3869 7.67044C18.5149 7.77305 18.5502 7.91167 18.567 8.00896C18.5839 8.10625 18.6049 8.32787 18.5882 8.50104C18.3977 10.4776 17.5736 15.2741 17.1543 17.4879C16.9769 18.4246 16.6275 18.7387 16.2894 18.7694C15.5544 18.8362 14.9963 18.2897 14.2844 17.8289C13.1705 17.1077 12.5412 16.6588 11.46 15.955C10.2104 15.1417 11.0204 14.6948 11.7326 13.9642C11.9189 13.7731 15.1572 10.8639 15.2199 10.6C15.2278 10.567 15.235 10.444 15.161 10.379C15.087 10.3141 14.9778 10.3363 14.899 10.354C14.7873 10.379 13.0078 11.5407 9.56051 13.8389C9.0554 14.1815 8.5979 14.3484 8.18799 14.3397C7.73609 14.33 6.86683 14.0873 6.22063 13.8798C5.42803 13.6254 4.79809 13.4908 4.85294 13.0587C4.88151 12.8336 5.19536 12.6034 5.79448 12.3681Z" fill="var(--color-blue)"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Viber">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.5 0C19.4036 0 25 5.59644 25 12.5C25 19.4036 19.4036 25 12.5 25C5.59644 25 0 19.4036 0 12.5C0 5.59644 5.59644 0 12.5 0Z" fill="white"/>
+              <path d="M17.7421 6.63108C17.3873 6.29671 15.9534 5.23365 12.7595 5.21921C12.7595 5.21921 8.99301 4.98725 7.15693 6.70724C6.13486 7.75126 5.77531 9.2789 5.73739 11.1729C5.69946 13.0668 5.65039 16.6162 9.00051 17.5786H9.00372L9.00158 19.0471C9.00158 19.0471 8.98015 19.6417 9.36348 19.7629C9.82716 19.91 10.0993 19.4581 10.542 18.971C10.785 18.7036 11.1205 18.3108 11.3733 18.0106C13.6645 18.2075 15.4267 17.7574 15.6268 17.6909C16.0894 17.5377 18.7072 17.195 19.1329 13.646C19.5724 9.9879 18.9204 7.67402 17.7421 6.63108ZM18.1304 13.3837C17.771 16.347 15.6478 16.5333 15.2563 16.6615C15.0899 16.7162 13.5422 17.1094 11.596 16.9797C11.596 16.9797 10.1458 18.7664 9.69282 19.231C9.62211 19.3036 9.53897 19.3329 9.48347 19.3185C9.40548 19.299 9.38405 19.2047 9.38491 19.0668C9.3862 18.8699 9.39734 16.6265 9.39734 16.6265C9.39562 16.6265 9.39734 16.6265 9.39734 16.6265C6.5634 15.8229 6.7286 12.802 6.76074 11.2201C6.79288 9.63821 7.08386 8.34232 7.94823 7.47073C9.50126 6.03412 12.7005 6.24879 12.7005 6.24879C15.4023 6.26083 16.6969 7.09172 16.9971 7.37006C17.9939 8.24166 18.5017 10.3273 18.1304 13.3828V13.3837Z" fill="#4D799D"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8145 9.94025C12.8197 9.8385 12.9046 9.76033 13.0043 9.76564C13.377 9.78549 13.6871 9.90072 13.9079 10.1339C14.128 10.3663 14.2358 10.6908 14.2547 11.0806C14.2597 11.1824 14.1829 11.2689 14.0833 11.274C13.9837 11.279 13.8989 11.2006 13.8939 11.0989C13.8777 10.7652 13.7881 10.5381 13.6483 10.3904C13.5093 10.2437 13.2972 10.1507 12.9854 10.1341C12.8858 10.1288 12.8093 10.042 12.8145 9.94025Z" fill="#4D799D"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5408 8.94641C12.5481 8.8448 12.6346 8.76845 12.7341 8.77589C13.4926 8.83259 14.1032 9.09728 14.5479 9.59306L14.548 9.59313C14.9879 10.084 15.197 10.6947 15.1818 11.411C15.1796 11.5129 15.097 11.5937 14.9973 11.5914C14.8975 11.5892 14.8184 11.5049 14.8206 11.403C14.834 10.7713 14.6521 10.2558 14.2815 9.84221C13.912 9.43034 13.3955 9.19525 12.7077 9.14385C12.6082 9.13641 12.5335 9.04802 12.5408 8.94641Z" fill="#4D799D"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2217 8.00167C12.2224 7.89979 12.3038 7.81778 12.4036 7.81849C13.4518 7.82594 14.3379 8.18234 15.0493 8.8906C15.7666 9.60478 16.1214 10.5771 16.1304 11.7846C16.1312 11.8865 16.0509 11.9697 15.9511 11.9705C15.8514 11.9713 15.7699 11.8893 15.7691 11.7874C15.7607 10.6559 15.4311 9.78595 14.7971 9.15478C14.1572 8.51769 13.3627 8.19426 12.4011 8.18742C12.3013 8.18671 12.221 8.10355 12.2217 8.00167Z" fill="#4D799D"/>
+              <path d="M13.0307 13.5606C13.0307 13.5606 13.2846 13.5824 13.4213 13.4104L13.6878 13.068C13.8164 12.8982 14.1267 12.7899 14.4305 12.9627C14.6582 13.0953 14.8792 13.2395 15.0928 13.3947C15.2944 13.5461 15.7073 13.898 15.7086 13.898C15.9053 14.0676 15.9507 14.3166 15.8168 14.5792C15.8168 14.5807 15.8158 14.5834 15.8158 14.5847C15.6683 14.8458 15.481 15.0813 15.261 15.2823C15.2584 15.2836 15.2584 15.2849 15.2561 15.2862C15.065 15.4493 14.8772 15.542 14.6928 15.5644C14.6656 15.5692 14.638 15.571 14.6105 15.5696C14.5292 15.5704 14.4483 15.5577 14.3709 15.532L14.3649 15.523C14.0808 15.4412 13.6064 15.2363 12.8164 14.7913C12.3592 14.5367 11.924 14.2431 11.5154 13.9135C11.3105 13.7484 11.1152 13.5715 10.9302 13.3835L10.9105 13.3634L10.8908 13.3433L10.871 13.3231C10.8644 13.3166 10.858 13.3098 10.8513 13.303C10.6673 13.1141 10.494 12.9146 10.3324 12.7054C10.0097 12.2881 9.72221 11.8437 9.47293 11.3769C9.0371 10.5698 8.83655 10.0858 8.75641 9.7952L8.74762 9.78907C8.72251 9.71009 8.71013 9.62746 8.71098 9.54442C8.70948 9.51631 8.71114 9.48812 8.71591 9.46039C8.73891 9.27234 8.82983 9.08043 8.98868 8.88466C8.98996 8.88225 8.99125 8.88225 8.99254 8.87962C9.1893 8.65495 9.41989 8.46378 9.67563 8.3133C9.67692 8.3133 9.67949 8.31198 9.68099 8.31198C9.93811 8.17522 10.182 8.22161 10.3478 8.4214C10.3491 8.42271 10.693 8.84439 10.8406 9.05031C10.9926 9.26864 11.1338 9.49461 11.2636 9.72736C11.4329 10.0374 11.3268 10.355 11.1605 10.4858L10.8252 10.758C10.6559 10.8977 10.6782 11.157 10.6782 11.157C10.6782 11.157 11.1749 13.0767 13.0307 13.5606Z" fill="#4D799D"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__info">
+        <p class="footer__company">© Частное научно-производственное унитарное предприятие<br>"Автоматизированные технологии туризма"</p>
+        <p class="footer__cert">Свидетельство о регистрации №1808 от 9.08.2007 выдано Минским горисполкомом. УНП: 190855081 Сертификат соответствия туристических услуг СТБ № BY/112 04.03. 071.01 00099 выдан Национальным агентством по туризму РБ, действителен до 22.10.2029 г.</p>
+      </div>
+    </div>
+
+    <hr class="footer__divider">
+    <p class="footer__copyright">© 2007-2026 Частное научно-производственное унитарное предприятие "Автоматизированные технологии туризма"</p>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

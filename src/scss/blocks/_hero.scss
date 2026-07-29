@@ -1,0 +1,168 @@
+@use "../vars" as *;
+
+.hero {
+  position: relative;
+  background-image: url('/src/assets/hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 110vh;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+                to right,
+                rgba(11, 11, 11, 0.45) 0%,
+                rgba(62, 62, 62, 0.3) 50%,
+                rgba(217, 217, 217, 0) 100%
+    );
+    z-index: 1;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 2;
+    max-width: 1640px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 clamp(20px, 5vw, 88px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__content {
+    margin-top: 21vh;
+    max-width: 800px;
+  }
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 66px);
+    color: var(--color-white);
+    line-height: 1.45;
+    margin-bottom: 24px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  &__subtitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: clamp(18px, 2vw, 21px);
+    color: var(--color-white);
+    margin-bottom: 64px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  &__button-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px 40px;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--color-primary);
+    }
+  }
+
+  &__scroll {
+    color: var(--color-white);
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__scroll-icon {
+    width: 40px;
+    height: 46px;
+    color: inherit;
+  }
+
+  &__br {
+    &--desktop {
+      display: inline;
+    }
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+.arrow-top {
+  animation: arrowWave 1.5s infinite;
+}
+
+.arrow-middle {
+  animation: arrowWave 1.5s infinite;
+  animation-delay: 0.5s;
+}
+
+.arrow-bottom {
+  animation: arrowWave 1.5s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes arrowWave {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: $tablet) {
+  .hero__br {
+    &--desktop {
+      display: none;
+    }
+    &--mobile {
+      display: inline;
+    }
+  }
+
+  .hero {
+    &__title {
+      max-width: 380px;
+    }
+
+    &__subtitle {
+      max-width: 320px;
+    }
+
+    &__scroll {
+      margin-left: 0;
+      align-self: center;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+}
